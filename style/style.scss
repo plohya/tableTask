@@ -15,12 +15,22 @@ body{
     padding: 0;
 }
 
+.wrapper{
+    padding: 10px;
+    // width: 1000px;
+}
+
+.lists {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .tableArea{
     display: flex;
     // justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 10px 100px 10px 100px;
+    // margin: 10px 100px 10px 100px;
     // padding: 0 10px 0 10px;s
     // border: 3px solid black;
     user-select: none;
@@ -31,11 +41,14 @@ body{
     border: 1px solid gray;
     // margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
+    flex-grow: 1;
+
     flex-basis: 23%;                        // Miss! Need update!!!
 }
 
 .tableTopElement{
     text-align: center;
+    flex-grow: 1;
     @include tableMainElementFont();
     border: 1px solid gray;
     flex-basis: 23%;                        // Miss! Need update!!!
@@ -65,22 +78,13 @@ body{
     background-color: gray;
 }
 
-.dynamic-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style-type: none;
-    user-select: none;
-    margin-top: 20px;
-}
-
 .cellsArea{
     display: flex;
     // justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
     // margin: 10px 100px 10px 100px;
-    // padding: 0 10px 0 10px;s
+    // padding: 0 10px 0 10px;
     user-select: none;
 }
 
@@ -96,14 +100,22 @@ body{
     cursor: pointer;
     @include tableMainElementFont();
 }
+.dynamic-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    user-select: none;
+    margin-bottom: 20px;
+}
 
 .pageNumbers{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     list-style-type: none;
     user-select: none;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .list_item{

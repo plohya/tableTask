@@ -29,7 +29,7 @@ carFive = {
   "capacity": 50
 };
 
-  const arr = [carOne, carTwo, carThree, carFour, carFive,carOne, carTwo, carFour, carFive,carOne, carTwo, carThree, carFour, carFive,carOne, carTwo, carThree, carFour, carFive,carFour, carThree];
+  const arr = [carOne, carTwo, carThree, carFour, carFive,carOne, carTwo, carFive,carOne, carTwo, carThree, carFour, carFive,carOne, carTwo, carThree, carFour, carFive,carFour, carThree,carOne, carTwo, carThree, carFour, carFive,carOne, carTwo, carFour, carFive,carOne, carTwo, carThree, carFour, carFive,carOne, carTwo, carThree, carFour, carFive,carFour, carThree,carOne, carTwo, carThree, carFour, carFive,carOne, carTwo, carFour, carFive,carOne, carTwo, carThree, carFour, carFive,carOne, carTwo, carThree, carFour, carFive,carFour, carThree,carOne, carTwo, carThree, carFour, carFive,carOne, carTwo, carFour, carFive,carOne, carTwo, carThree, carFour, carFive,carOne, carTwo, carThree, carFour, carFive,carFour, carThree,carOne, carTwo, carThree, carFour, carFive,carOne, carTwo, carFour, carFive,carOne, carTwo, carThree, carFour, carFive,carOne, carTwo, carThree, carFour, carFive, carFour,carFour];
 
   // не навешивать класс, а сделать 2 eventа, если нажал на первый, то оно пойдёт на второй как-то так
 class Table{
