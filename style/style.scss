@@ -129,4 +129,5 @@ body{
 
 .active{
     background-color: dodgerblue;
+    transition: .3s ease-in background-color;
 }

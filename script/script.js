@@ -105,6 +105,7 @@ class Table{
   }
 
   arrowBtnClick(title, btn) {
+    this.$arbtns.forEach(item => this.checkBtn(item));
     console.log(this.sortInformation.title, this.sortInformation.desc);
     if(this.sortInformation.desc === -1 && this.sortInformation.title === title) {
       this.reverseSortTable(this.array, title);
@@ -112,12 +113,13 @@ class Table{
       this.sortInformation.desc = 1;
       this.sortInformation.title = title;
       console.log(btn);
-      btn.classList.toggle('.backSortButton');
+      btn.classList.remove('backSortButton');
     } else {
       this.sortTable(this.array, title);
       this.drawCells(this.array);
       this.sortInformation.desc = -1;
       this.sortInformation.title = title;
+      btn.classList.add('backSortButton');
     }
   }
 
@@ -129,15 +131,18 @@ class Table{
       this.$pagination_element.innerHTML += `<button class='list_item'>${i+1}</button>`;
     }
     this.$pagBtn = document.querySelectorAll('.list_item');
-    this.$pagBtn.forEach(item => item.addEventListener('click', (e) => this.pagChange(e.target.textContent)));
-  }
+    this.$pagBtn[0].classList.add('active');
+    this.$pagBtn.forEach(item => item.addEventListener('click', (e) => this.pagChange(e.target))
+    )};
 
   pagChange(page){
-    let start = (page-1) * this.amount;
+    this.$pagBtn.forEach(item => this.checkBtn(item));
+    let start = (page.textContent-1) * this.amount;
     let end = start + this.amount;
     let a = this.array.slice(start,end);
     console.log('--->', start,end,a);
     this.drawCells(a);
+    page.classList.toggle('active');
   }
 
   addDynamicEvent(){
@@ -146,6 +151,7 @@ class Table{
   
   dynamicView(button){
     console.log(button);
+    this.$dynamicList.forEach(item => this.checkBtn(item));
     if(button.textContent === 'ALL') {
       this.amount = this.array.length;
       this.drawCells(this.array);
@@ -155,8 +161,17 @@ class Table{
       this.dynamicChange(this.array, this.amount);
       this.displayList();
     }
+    button.classList.toggle('active');
   }
   
+  checkBtn(item){
+    if(item.classList.contains('active')){
+      item.classList.remove('active');
+    } else if(item.classList.contains('backSortButton')) {
+      item.classList.remove('backSortButton');
+    }
+  }
+
   dynamicChange(array, amount) {
     console.log('dynamicChange');
     this.clearCells();
