@@ -1,0 +1,132 @@
+@mixin tableElementFont{
+    font-family: monospace;
+    font-size: 15px;
+    color: black;
+}
+
+@mixin tableMainElementFont() {
+    @include tableElementFont();
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.tableArea{
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 100px 10px 100px;
+    // padding: 0 10px 0 10px;s
+    // border: 3px solid black;
+    user-select: none;
+}
+
+.tableElement{
+    @include tableElementFont();
+    border: 1px solid gray;
+    // margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    flex-basis: 23%;                        // Miss! Need update!!!
+}
+
+.tableTopElement{
+    text-align: center;
+    @include tableMainElementFont();
+    border: 1px solid gray;
+    flex-basis: 23%;                        // Miss! Need update!!!
+    // margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.sortButton{
+    margin-left: 5px;
+    position: relative;
+    height: 10px;
+    cursor: pointer;
+}
+
+.backSortButton{
+    position: relative;
+    height: 10px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.btn{
+    position: absolute;
+    left: 500px;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+
+.dynamic-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    user-select: none;
+    margin-top: 20px;
+}
+
+.cellsArea{
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // margin: 10px 100px 10px 100px;
+    // padding: 0 10px 0 10px;s
+    user-select: none;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 1px;
+    background-color: gray;
+    transition: .3s ease-in background-color;
+    cursor: pointer;
+    @include tableMainElementFont();
+}
+
+.pageNumbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    user-select: none;
+    margin-top: 20px;
+}
+
+.list_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 1px;
+    background-color: gray;
+    transition: .3s ease-in background-color;
+    cursor: pointer;
+    @include tableMainElementFont();
+}
+
+.list_item:hover{
+    background-color: lightblue;
+}
+
+.item:hover{
+    background-color: lightblue;
+}
+
+.active{
+    background-color: dodgerblue;
+}

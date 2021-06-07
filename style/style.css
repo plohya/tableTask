@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.tableArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 100px 10px 100px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.tableElement {
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
+  border: 1px solid gray;
+  padding: 5px 5px 5px 5px;
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+}
+
+.tableTopElement {
+  text-align: center;
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid gray;
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  padding: 5px 5px 5px 5px;
+}
+
+.sortButton {
+  margin-left: 5px;
+  position: relative;
+  height: 10px;
+  cursor: pointer;
+}
+
+.backSortButton {
+  position: relative;
+  height: 10px;
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.btn {
+  position: absolute;
+  left: 500px;
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+}
+
+.dynamic-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: 20px;
+}
+
+.cellsArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 1px;
+  background-color: gray;
+  -webkit-transition: .3s ease-in background-color;
+  transition: .3s ease-in background-color;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pageNumbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: 20px;
+}
+
+.list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 1px;
+  background-color: gray;
+  -webkit-transition: .3s ease-in background-color;
+  transition: .3s ease-in background-color;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.list_item:hover {
+  background-color: lightblue;
+}
+
+.item:hover {
+  background-color: lightblue;
+}
+
+.active {
+  background-color: dodgerblue;
+}
+/*# sourceMappingURL=style.css.map */
