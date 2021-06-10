@@ -3,143 +3,122 @@ body {
   padding: 0;
 }
 
-.wrapper {
-  padding: 10px;
-}
-
-.lists {
+.text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
+  border: none;
+  margin-right: 10px;
 }
 
 .tableArea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  margin: 50px 50px 50px 50px;
+  width: 1720px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
+  border: 3px black solid;
 }
 
-.tableElement {
-  font-family: monospace;
-  font-size: 15px;
-  color: black;
-  border: 1px solid gray;
-  padding: 5px 5px 5px 5px;
-  -ms-flex-preferred-size: 23%;
-      flex-basis: 23%;
-  width: 200px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
+.titlesArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
 }
 
 .tableTopElement {
+  border: 1px solid gray;
   text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   font-family: monospace;
   font-size: 15px;
   color: black;
   font-size: 20px;
   font-weight: bold;
-  border: 1px solid gray;
   padding: 5px 5px 5px 5px;
-  -ms-flex-preferred-size: 23%;
-      flex-basis: 23%;
+  width: 100%;
 }
 
 .sortButton {
-  margin-left: 5px;
-  position: relative;
-  height: 10px;
+  display: inline-block;
   cursor: pointer;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  margin-left: 5px;
 }
 
 .backSortButton {
-  position: relative;
-  height: 10px;
+  display: inline-block;
   cursor: pointer;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
-}
-
-.btn {
-  position: absolute;
-  left: 500px;
-  width: 100px;
-  height: 100px;
-  background-color: gray;
+  margin-right: 5px;
 }
 
 .cellsArea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  width: 100%;
 }
 
-.item {
+.cellsArea > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 40px;
-  width: 40px;
-  margin: 1px;
-  background-color: gray;
-  -webkit-transition: .3s ease-in background-color;
-  transition: .3s ease-in background-color;
-  cursor: pointer;
+}
+
+.tableElement {
   font-family: monospace;
   font-size: 15px;
   color: black;
-  font-size: 20px;
-  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+  width: 100%;
+  border: 1px solid gray;
+}
+
+.btnList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1720px;
+  margin-top: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .dynamic-list {
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,18 +126,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  margin-bottom: 20px;
 }
 
-.pageNumbers {
+.pagBtnsList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,18 +144,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  list-style-type: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  margin-bottom: 20px;
 }
 
-.list_item {
+.dynamicListItem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,11 +170,35 @@ body {
   font-weight: bold;
 }
 
-.list_item:hover {
+.dynamicListItem:hover {
   background-color: lightblue;
 }
 
-.item:hover {
+.pagListItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 1px;
+  background-color: gray;
+  -webkit-transition: .3s ease-in background-color;
+  transition: .3s ease-in background-color;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pagListItem:hover {
   background-color: lightblue;
 }
 
@@ -213,5 +206,41 @@ body {
   background-color: dodgerblue;
   -webkit-transition: .3s ease-in background-color;
   transition: .3s ease-in background-color;
+}
+
+@media (max-width: 1750px) {
+  .tableArea {
+    width: 1500px;
+  }
+  .btnList {
+    width: 1500px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .tableArea {
+    width: 1300px;
+  }
+  .btnList {
+    width: 1300px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .tableArea {
+    width: 1000px;
+  }
+  .btnList {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .tableArea {
+    width: 700px;
+  }
+  .btnList {
+    width: 700px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
