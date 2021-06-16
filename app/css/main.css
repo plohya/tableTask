@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.text {
+  display: flex;
+  align-items: center;
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
+  border: none;
+  margin-right: 10px; }
+
+.tableArea {
+  display: flex;
+  margin: 50px 50px 50px 50px;
+  width: 1720px;
+  flex-wrap: wrap;
+  user-select: none;
+  border: 3px black solid; }
+
+.titlesArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%; }
+
+.tableTopElement {
+  border: 1px solid gray;
+  text-align: center;
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+  width: 100%; }
+
+.sortButton {
+  display: inline-block;
+  cursor: pointer;
+  transform: rotate(90deg);
+  margin-left: 5px; }
+
+.backSortButton {
+  display: inline-block;
+  cursor: pointer;
+  transform: rotate(270deg);
+  margin-right: 5px; }
+
+.cellsArea {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.cellsArea > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
+
+.tableElement {
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
+  padding: 5px 5px 5px 5px;
+  width: 100%;
+  border: 1px solid gray; }
+
+.btnList {
+  display: flex;
+  width: 1720px;
+  margin-top: 20px;
+  justify-content: space-around; }
+
+.dynamic-list {
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  user-select: none; }
+
+.pagBtnsList {
+  display: flex;
+  flex-direction: row; }
+
+.dynamicListItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 1px;
+  background-color: gray;
+  transition: .3s ease-in background-color;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold; }
+  .dynamicListItem:hover {
+    background-color: lightblue; }
+
+.pagListItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 1px;
+  background-color: gray;
+  transition: .3s ease-in background-color;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold; }
+  .pagListItem:hover {
+    background-color: lightblue; }
+
+.active {
+  background-color: dodgerblue;
+  transition: .3s ease-in background-color; }
+
+@media (max-width: 1750px) {
+  .tableArea {
+    width: 1500px; }
+  .btnList {
+    width: 1500px; } }
+
+@media (max-width: 1550px) {
+  .tableArea {
+    width: 1300px; }
+  .btnList {
+    width: 1300px; } }
+
+@media (max-width: 1350px) {
+  .tableArea {
+    width: 1000px; }
+  .btnList {
+    width: 1000px; } }
+
+@media (max-width: 1050px) {
+  .tableArea {
+    width: 700px; }
+  .btnList {
+    width: 700px; } }
+
